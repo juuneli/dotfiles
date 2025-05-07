@@ -1,0 +1,102 @@
+/* ~/.config/wofi/style.css */
+/* Window-Watching Cat - Catppuccin Latte Colors - Modified to match wallpaper */
+@define-color rosewater #dc8a78;
+@define-color flamingo #dd7878;
+@define-color pink #ea76cb;
+@define-color mauve #8839ef;
+@define-color red #d20f39;
+@define-color maroon #e64553;
+@define-color peach #fe640b;
+@define-color yellow #f0c254; /* Adjusted to match tulips */
+@define-color green #4cad3b; /* Adjusted to match meadow */
+@define-color teal #179299;
+@define-color sky #7ac5e2; /* Adjusted to match sky */
+@define-color sapphire #209fb5;
+@define-color blue #8abaef; /* Adjusted to match window light */
+@define-color lavender #d7c9f0; /* Adjusted for window curtain */
+@define-color text #4c4f69;
+@define-color subtext1 #5c5f77;
+@define-color subtext0 #6c6f85;
+@define-color overlay2 #7c7f93;
+@define-color overlay1 #8c8fa1;
+@define-color overlay0 #9ca0b0;
+@define-color surface2 #acb0be;
+@define-color surface1 #bcc0cc;
+@define-color surface0 #e3e7f0; /* Slightly adjusted */
+@define-color base #f2f5fa; /* Slightly adjusted for more airy feel */
+@define-color mantle #e8edf7; /* Slightly adjusted */
+@define-color crust #dce0e8;
+@define-color cat #262626; /* Black cat color */
+@define-color window-frame #f0c254; /* Window frame color matching tulips */
+
+window {
+    margin: 0px;
+    border: 8px solid @window-frame;
+    border-radius: 8px;
+    background-color: @base;
+    font-family: "SF Pro Text", monospace;
+    font-size: 14px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#input {
+    margin: 12px;
+    padding: 10px 14px;
+    border: 2px solid @surface1;
+    border-radius: 8px;
+    color: @text;
+    background-color: @mantle;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+#input:focus {
+    border: 2px solid @cat;
+    box-shadow: 0 0 10px rgba(38, 38, 38, 0.2);
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+#outer-box {
+    margin: 0;
+    border: none;
+    background-color: @base;
+    border-radius: 0;
+    position: relative;
+}
+
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#text {
+    margin: 5px;
+    color: @text;
+}
+
+#entry {
+    padding: 6px;
+    border-radius: 6px;
+}
+
+#entry:selected {
+    background-color: @green;
+    border-left: 4px solid @yellow;
+    transform: translateX(2px);
+    transition: all 0.2s ease;
+}
+
+#entry:selected #text {
+    color: @base;
+}
+
+#entry:hover {
+    background-color: fade(@green, 10%);
+}
