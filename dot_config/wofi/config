@@ -2,7 +2,7 @@
 show=drun
 width=30%
 height=40%
-prompt=Meow...
+prompt=Search
 filter_rate=100
 allow_markup=true
 no_actions=true
@@ -13,5 +13,5 @@ insensitive=true
 allow_images=true
 image_size=24
 hide_scroll=true
-x=70%  # Position to right side, away from cat
-y=20%  # Position near top of screen, like looking out a window
+x=70%
+y=20%
